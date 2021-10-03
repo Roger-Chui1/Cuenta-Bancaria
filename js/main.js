@@ -31,10 +31,12 @@ let mont = re.setMonto();
 let b1 = () => {
   let d1 = parseInt(document.getElementById("d1").value);
   document.getElementById("r1").innerHTML = re.depositar(d1);
+  document.getElementById("d1").value="";
 };
 let b2 = () => {
   let d2 = parseInt(document.getElementById("d2").value);
   document.getElementById("r2").innerHTML = re.girar(d2);
+  document.getElementById("d2").value="";
 };
 let b3 = () => {
   document.getElementById("r3").innerHTML = re.obtenerSaldo();
